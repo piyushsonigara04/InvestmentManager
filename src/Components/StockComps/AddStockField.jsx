@@ -5,9 +5,9 @@ const AddStockField = () =>{
 
     const [stockData,setStock] = useState({
         stock_symbol:"",
-        buy_price:0,
+        buy_price:null,
         buy_date:"",
-        quantity:0
+        quantity:null
     })
 
     const changeHandler = (event)=>{
@@ -63,7 +63,7 @@ const AddStockField = () =>{
                         placeholder="Enter Stock Symbol"
                         className="p-1 rounded-md bg-[#141332] text-white w-full h-full"/>
                     </label>
-                    <label htmlFor="buy_price" className="w-full h-1/2 h-11">
+                    <label htmlFor="buy_price" className="w-full h-11">
                         <input 
                         required
                         type="number" 
