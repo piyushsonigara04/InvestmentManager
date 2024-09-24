@@ -3,6 +3,7 @@ import Content from "./Components/Content"
 import Login from "./Pages/Login"
 import { Route,Routes } from "react-router-dom"
 import Signup from "./Pages/Signup"
+import Sentiment from "./Pages/Sentiment"
 
 function App() {
   console.log("In app")
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Signup/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/Dashboard" element={<Content/>}/>
+        <Route path="/Sentiment" element = {<Sentiment/>}/>
       </Routes>
     </div>
   )

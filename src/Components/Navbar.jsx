@@ -1,5 +1,6 @@
 import { FaFire } from "react-icons/fa6";
 import { RxDashboard } from "react-icons/rx";
+import { NavLink } from "react-router-dom";
 
 function Navbar(){
     return (
@@ -9,9 +10,9 @@ function Navbar(){
                 <h1 className="text-white text-3xl font-bold cursor-pointer">InvesTio</h1>
             </div>
             <div className="flex flex-col justify-center gap-5 w-full">
-                <button className="text-white flex items-center gap-2 text-xl h-14 p-2 w-full rounded-lg bg-[#6359E9]"><RxDashboard color="white" size={25}/>Dashboard</button>
-                <button className="text-white flex items-center gap-2 text-xl h-14 p-2 w-full"><RxDashboard color="white" size={25}/>Analytics</button>
-                <button className="text-white flex items-center gap-2 text-xl h-14 p-2 w-full"><RxDashboard color="white" size={25}/>News</button>
+                <NavLink to="/Dashboard" className="text-white flex items-center gap-2 text-xl h-14 p-2 w-full rounded-lg"><RxDashboard color="white" size={25}/>Dashboard</NavLink>
+                <NavLink to="/News" className="text-white flex items-center gap-2 text-xl h-14 p-2 w-full rounded-lg"><RxDashboard color="white" size={25}/>News</NavLink>
+                <NavLink to="/Sentiment" className="text-white flex items-center gap-2 text-xl h-14 p-2 w-full rounded-lg"><RxDashboard color="white" size={25}/>Sentiment</NavLink>
             </div>
         </div>
     )
