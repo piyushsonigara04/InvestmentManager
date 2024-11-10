@@ -1,0 +1,11 @@
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color:#141332;
+  }
+.news-container p{
+  color:white
+}
+  

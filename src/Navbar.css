@@ -1,0 +1,42 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Dark background for the navbar */
+    padding: 10px 20px; /* Space inside the navbar */
+    color: black; /* Text color */
+}
+
+.navbar-left,
+.navbar-right {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-left li
+{
+   margin: 20px; 
+   padding:20px; 
+}
+.navbar-right li {
+    margin-right: 20px; /* Space between items */
+}
+
+
+.navbar-left a:hover,
+.navbar-right a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.navbar-right {
+    margin-left: auto; /* Push the right items to the right */
+}
+.navbar-btn{
+    color:black;
+}
+h2{
+    text-align:center;
+}

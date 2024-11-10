@@ -5,7 +5,7 @@ function Welcome(){
     return (
         <div className="h-20 p-3 mt-2 flex justify-between">
             <div className="text-lg">
-                <p className="text-white font-bold">Welcome Back , Piyush 👋</p>
+                <p className="text-white font-bold">Welcome Back👋</p>
                 <p className="text-gray-500">Here's whats going on with your investments</p>
             </div>
             

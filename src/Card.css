@@ -1,0 +1,18 @@
+.card {
+    background-color: white;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius:20px;
+    margin: 10px;
+    padding: 20px; /* Optional: adds some space inside the card */
+   text-align: center; /* Centers content horizontally */
+}
+
+.card .card-img {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 50%;
+    border: 10px solid black; /* Add a border to the image */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}

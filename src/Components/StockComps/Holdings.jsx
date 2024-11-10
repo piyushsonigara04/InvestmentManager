@@ -23,18 +23,18 @@ function Holdings() {
                 credentials: 'include',
             });
             const result = await response.json();
-            const data = result.data || [];  // Handle the case where data might not exist
+            const data = result.data || [];  
 
             if (data.length > 0) {
                 console.log("Fetched Holdings", data);
                 setHoldings(data);
             } else {
                 console.error("No holdings found.");
-                setHoldings([]);  // Set to empty if no data
+                setHoldings([]);  
             }
         } catch (error) {
             console.error("Error fetching holdings:", error);
-            setHoldings([]);  // Set to empty on error
+            setHoldings([]);  
         }
     };
 
@@ -53,7 +53,7 @@ function Holdings() {
             }
         } catch (error) {
             console.error("Error fetching stock price:", error);
-            return null; // Return null on error
+            return null; 
         }
     };
 
@@ -81,18 +81,18 @@ function Holdings() {
 
     useEffect(() => {
         if (holdings.length > 0) {
-            getCurrentPrices();  // Call this only if holdings are fetched
+            getCurrentPrices();  
         }
     }, [holdings]);
 
     useEffect(() => {
-        console.log("Updated currPrices:", currPrices); // Log currPrices when it changes
+        console.log("Updated currPrices:", currPrices); 
     }, [currPrices]);
 
     return (
         <div className="min-h-full bg-[#1D1D41] w-[74%] relative flex justify-center items-center p-2 overflow-y-scroll scrollbar">
             <FaPlusCircle className="text-2xl text-white absolute bottom-1 right-1 cursor-pointer" onClick={handleAddHolding} />
-            {holding ? <HoldingsTable data={holdings} currPrices={currPrices} /> : <AddStockField />}
+            {holding ? <HoldingsTable data={holdings} currPrices={currPrices} fetchHoldings={fetchHoldings}/> : <AddStockField fetchHoldings={fetchHoldings}/>}
         </div>
     );
 }

@@ -1,0 +1,86 @@
+.overview-container {
+    padding: 1rem;
+    background-color: #2C2753;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto; /* Allow height to adjust based on content */
+}
+
+.overview-title {
+    color: white;
+    font-size: 1rem; /* Text-lg equivalent */
+    margin-bottom: 1rem;
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 1rem; /* Gap between cards */
+}
+
+.overview-card {
+    background-color: #1B1736;
+    border-radius: 0.5rem;
+    padding: 0.75rem; /* Adjust padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    min-height: 120px; /* Set a minimum height for the cards */
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-icon {
+    font-size: 1rem; /* Icon size */
+}
+
+.card-title {
+    font-size: 0.875rem; /* Text-xs equivalent */
+    opacity: 0.8;
+}
+
+.card-value {
+    font-size: 1rem; /* Text-base equivalent */
+    font-weight: bold;
+}
+
+.card-change {
+    margin-top: 0.5rem;
+    font-size: 0.75rem; /* Text-xs equivalent */
+}
+
+/* Specific colors */
+.text-purple-500 {
+    color: #a855f7;
+}
+
+.text-green-500 {
+    color: #22c55e;
+}
+
+.text-red-500 {
+    color: #ef4444;
+}
+
+.text-purple-300 {
+    color: #c084fc;
+}
+
+.text-green-300 {
+    color: #86efac;
+}
+
+.text-red-300 {
+    color: #fca5a5;
+}
